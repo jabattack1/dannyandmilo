@@ -26,6 +26,22 @@
 <link href='http://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="http://i1301.photobucket.com/albums/ag119/jabattack1/DannyPainting_zpsojhtmhs6.jpg">
 <body>
+
+
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script>
+
+SC.initialize({
+  client_id: '7e1e5d50b5f91b20d6880ec7c8a19fd4'
+});
+
+// stream track id 293
+SC.stream("/tracks/204190523", function(sound){
+  sound.play();
+  sound.loop = true
+});
+</script>
+
 <div id='banner' class='animated slideInDown'>
 
 <a href="/" class='animated fadeIn' onClick="home();return false;">
